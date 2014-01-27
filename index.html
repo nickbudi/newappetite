@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>New Appetite</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="shortcut icon" href="images/favicon.png">
+
+        <!-- build:js js/vendor/modernizr.js -->
+        <script src="components/modernizr/modernizr.js"></script>
+        <!-- endbuild -->
+
+    </head>
+    <body>
+        <!--[if lt IE 9]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <header id="top-bar">
+            <a href="#" id="logo"></a>
+            <nav>
+                <button id="navicon">
+                    <span class="lines"></span>
+                </button>
+                <button id="search"><i class="fa fa-search"></i></button>
+                <input id="search-input" type="text" placeholder="Search for songs, artists, genres"/>
+                <div id="guest">
+                    <button id="signin">Sign In</button>
+                    <span class="or"></span>
+                    <button id="signup">Sign Up</button>
+                </div>
+                <button id="add-music"><i class="fa fa-plus"></i>Add Music</button>
+                <button id="profile">
+                    <img src="images/nick.png"/><span class="name">Nick Budidharma</span>
+                    <ul class="dropdown">
+                        <li class="user-stats">
+                            <a href="">1,200 Points</a>
+                            <a href="" class="followers">734 Followers</a>
+                            <a href="">259 Following</a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa fa-inbox"></i>Messages</a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa fa-gear"></i>Account Settings</a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa fa-power-off"></i>Logout</a>
+                        </li>
+                    <ul>
+                </button>
+            </nav>
+        </header>
+
+        <aside id="off-canvas">
+            <ul id="charts">
+                <li class="label">Charts</li>
+                <li><a href="#">Top</a></li>
+                <li><a href="#">Recent</a></li>
+                <li><a href="#">Most Favorited</a></li>
+                <li><a href="#">All Time</a></li>
+            </ul>
+            <ul>
+                <li class="label">Genres<button class="minimize"><i class="fa fa-chevron-down"></i></button></li>
+            </ul>
+            <ul>
+                <li class="label">Playlists<button class="minimize"><i class="fa fa-chevron-down"></i></button></li>
+            </ul>
+            <ul>
+                <li class="label">Activity Feed<button class="minimize"><i class="fa fa-chevron-down"></i></button></li>
+            </ul>
+            <footer><i class="fa fa-question-circle"></i></footer>
+        </aside>
+
+        <div id="main">
+            <ul class="chart">
+                <li>
+                    <div class="cover">
+                        <img src="images/albums/1.png" />
+                        <div class="hover-panel">
+                            <button class="play"></button>
+                            <button class="info"><i class="fa fa-info-circle"></i></button>
+                            <button class="favorite"><i class="fa fa-heart"></i></button>
+                            <button class="add"><i class="fa fa-plus"></i></button>
+                        </div>
+                        <div class="info-panel">
+                            <button class="close"><i class="fa fa-times-circle"></i></button>
+                            <button class="report"><i class="fa fa-flag"></i></button>
+                            <span class="uploader">Added by User</span>
+                            <span class="source">16 day ago from <i class="fa fa-youtube-play"></i></span>
+                        </div>
+                        <div class="corner"><span class="rank">1</span></div>
+                    </div>
+                    <div class="song-info">
+                        <button class="upvote"><i class="fa fa-arrow-up"></i>765</button>
+                        <span class="artist">The Artist -</span>
+                        <span class="song">The Song Name</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="cover">
+                        <img src="images/albums/2.png" />
+                        <div class="hover-panel">
+                            <button class="play"></button>
+                            <button class="info"><i class="fa fa-info-circle"></i></button>
+                            <button class="favorite"><i class="fa fa-heart"></i></button>
+                            <button class="add"><i class="fa fa-plus"></i></button>
+                        </div>
+                        <div class="info-panel">
+                            <button class="close"><i class="fa fa-times-circle"></i></button>
+                            <button class="report"><i class="fa fa-flag"></i></button>
+                            <span class="uploader">Added by User</span>
+                            <span class="source">16 day ago from <i class="fa fa-youtube-play"></i></span>
+                        </div>
+                        <div class="corner"><span class="rank">2</span></div>
+                    </div>
+                    <div class="song-info">
+                        <button class="upvote"><i class="fa fa-arrow-up"></i>669</button>
+                        <span class="artist">The Artist -</span>
+                        <span class="song">The Song Name</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="cover">
+                        <img src="images/albums/3.png" />
+                        <div class="hover-panel">
+                            <button class="play"></button>
+                            <button class="info"><i class="fa fa-info-circle"></i></button>
+                            <button class="favorite"><i class="fa fa-heart"></i></button>
+                            <button class="add"><i class="fa fa-plus"></i></button>
+                        </div>
+                        <div class="info-panel">
+                            <button class="close"><i class="fa fa-times-circle"></i></button>
+                            <button class="report"><i class="fa fa-flag"></i></button>
+                            <span class="uploader">Added by User</span>
+                            <span class="source">16 day ago from <i class="fa fa-youtube-play"></i></span>
+                        </div>
+                        <div class="corner"><span class="rank">3</span></div>
+                    </div>
+                    <div class="song-info">
+                        <button class="upvote"><i class="fa fa-arrow-up"></i>651</button>
+                        <span class="artist">The Artist -</span>
+                        <span class="song">The Song Name</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="cover">
+                        <img src="images/albums/4.png" />
+                        <div class="hover-panel">
+                            <button class="play"></button>
+                            <button class="info"><i class="fa fa-info-circle"></i></button>
+                            <button class="favorite"><i class="fa fa-heart"></i></button>
+                            <button class="add"><i class="fa fa-plus"></i></button>
+                        </div>
+                        <div class="info-panel">
+                            <button class="close"><i class="fa fa-times-circle"></i></button>
+                            <button class="report"><i class="fa fa-flag"></i></button>
+                            <span class="uploader">Added by User</span>
+                            <span class="source">16 day ago from <i class="fa fa-youtube-play"></i></span>
+                        </div>
+                        <div class="corner"><span class="rank">4</span></div>
+                    </div>
+                    <div class="song-info">
+                        <button class="upvote"><i class="fa fa-arrow-up"></i>496</button>
+                        <span class="artist">The Artist -</span>
+                        <span class="song">The Song Name</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="cover">
+                        <img src="images/albums/5.png" />
+                        <div class="hover-panel">
+                            <button class="play"></button>
+                            <button class="info"><i class="fa fa-info-circle"></i></button>
+                            <button class="favorite"><i class="fa fa-heart"></i></button>
+                            <button class="add"><i class="fa fa-plus"></i></button>
+                        </div>
+                        <div class="info-panel">
+                            <button class="close"><i class="fa fa-times-circle"></i></button>
+                            <button class="report"><i class="fa fa-flag"></i></button>
+                            <span class="uploader">Added by User</span>
+                            <span class="source">16 day ago from <i class="fa fa-youtube-play"></i></span>
+                        </div>
+                        <div class="corner"><span class="rank">5</span></div>
+                    </div>
+                    <div class="song-info">
+                        <button class="upvote"><i class="fa fa-arrow-up"></i>496</button>
+                        <span class="artist">The Artist -</span>
+                        <span class="song">The Song Name</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="cover">
+                        <img src="images/albums/5.png" />
+                        <div class="hover-panel">
+                            <button class="play"></button>
+                            <button class="info"><i class="fa fa-info-circle"></i></button>
+                            <button class="favorite"><i class="fa fa-heart"></i></button>
+                            <button class="add"><i class="fa fa-plus"></i></button>
+                        </div>
+                        <div class="info-panel">
+                            <button class="close"><i class="fa fa-times-circle"></i></button>
+                            <button class="report"><i class="fa fa-flag"></i></button>
+                            <span class="uploader">Added by User</span>
+                            <span class="source">16 day ago from <i class="fa fa-youtube-play"></i></span>
+                        </div>
+                        <div class="corner"><span class="rank">5</span></div>
+                    </div>
+                    <div class="song-info">
+                        <button class="upvote"><i class="fa fa-arrow-up"></i>496</button>
+                        <span class="artist">The Artist -</span>
+                        <span class="song">The Song Name</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="cover">
+                        <img src="images/albums/5.png" />
+                        <div class="hover-panel">
+                            <button class="play"></button>
+                            <button class="info"><i class="fa fa-info-circle"></i></button>
+                            <button class="favorite"><i class="fa fa-heart"></i></button>
+                            <button class="add"><i class="fa fa-plus"></i></button>
+                        </div>
+                        <div class="info-panel">
+                            <button class="close"><i class="fa fa-times-circle"></i></button>
+                            <button class="report"><i class="fa fa-flag"></i></button>
+                            <span class="uploader">Added by User</span>
+                            <span class="source">16 day ago from <i class="fa fa-youtube-play"></i></span>
+                        </div>
+                        <div class="corner"><span class="rank">5</span></div>
+                    </div>
+                    <div class="song-info">
+                        <button class="upvote"><i class="fa fa-arrow-up"></i>496</button>
+                        <span class="artist">The Artist -</span>
+                        <span class="song">The Song Name</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="cover">
+                        <img src="images/albums/5.png" />
+                        <div class="hover-panel">
+                            <button class="play"></button>
+                            <button class="info"><i class="fa fa-info-circle"></i></button>
+                            <button class="favorite"><i class="fa fa-heart"></i></button>
+                            <button class="add"><i class="fa fa-plus"></i></button>
+                        </div>
+                        <div class="info-panel">
+                            <button class="close"><i class="fa fa-times-circle"></i></button>
+                            <button class="report"><i class="fa fa-flag"></i></button>
+                            <span class="uploader">Added by User</span>
+                            <span class="source">16 day ago from <i class="fa fa-youtube-play"></i></span>
+                        </div>
+                        <div class="corner"><span class="rank">5</span></div>
+                    </div>
+                    <div class="song-info">
+                        <button class="upvote"><i class="fa fa-arrow-up"></i>496</button>
+                        <span class="artist">The Artist -</span>
+                        <span class="song">The Song Name</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="cover">
+                        <img src="images/albums/5.png" />
+                        <div class="hover-panel">
+                            <button class="play"></button>
+                            <button class="info"><i class="fa fa-info-circle"></i></button>
+                            <button class="favorite"><i class="fa fa-heart"></i></button>
+                            <button class="add"><i class="fa fa-plus"></i></button>
+                        </div>
+                        <div class="info-panel">
+                            <button class="close"><i class="fa fa-times-circle"></i></button>
+                            <button class="report"><i class="fa fa-flag"></i></button>
+                            <span class="uploader">Added by User</span>
+                            <span class="source">16 day ago from <i class="fa fa-youtube-play"></i></span>
+                        </div>
+                        <div class="corner"><span class="rank">5</span></div>
+                    </div>
+                    <div class="song-info">
+                        <button class="upvote"><i class="fa fa-arrow-up"></i>496</button>
+                        <span class="artist">The Artist -</span>
+                        <span class="song">The Song Name</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="cover">
+                        <img src="images/albums/5.png" />
+                        <div class="hover-panel">
+                            <button class="play"></button>
+                            <button class="info"><i class="fa fa-info-circle"></i></button>
+                            <button class="favorite"><i class="fa fa-heart"></i></button>
+                            <button class="add"><i class="fa fa-plus"></i></button>
+                        </div>
+                        <div class="info-panel">
+                            <button class="close"><i class="fa fa-times-circle"></i></button>
+                            <button class="report"><i class="fa fa-flag"></i></button>
+                            <span class="uploader">Added by User</span>
+                            <span class="source">16 day ago from <i class="fa fa-youtube-play"></i></span>
+                        </div>
+                        <div class="corner"><span class="rank">5</span></div>
+                    </div>
+                    <div class="song-info">
+                        <button class="upvote"><i class="fa fa-arrow-up"></i>496</button>
+                        <span class="artist">The Artist -</span>
+                        <span class="song">The Song Name</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="cover">
+                        <img src="images/albums/5.png" />
+                        <div class="hover-panel">
+                            <button class="play"></button>
+                            <button class="info"><i class="fa fa-info-circle"></i></button>
+                            <button class="favorite"><i class="fa fa-heart"></i></button>
+                            <button class="add"><i class="fa fa-plus"></i></button>
+                        </div>
+                        <div class="info-panel">
+                            <button class="close"><i class="fa fa-times-circle"></i></button>
+                            <button class="report"><i class="fa fa-flag"></i></button>
+                            <span class="uploader">Added by User</span>
+                            <span class="source">16 day ago from <i class="fa fa-youtube-play"></i></span>
+                        </div>
+                        <div class="corner"><span class="rank">5</span></div>
+                    </div>
+                    <div class="song-info">
+                        <button class="upvote"><i class="fa fa-arrow-up"></i>496</button>
+                        <span class="artist">The Artist -</span>
+                        <span class="song">The Song Name</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="cover">
+                        <img src="images/albums/5.png" />
+                        <div class="hover-panel">
+                            <button class="play"></button>
+                            <button class="info"><i class="fa fa-info-circle"></i></button>
+                            <button class="favorite"><i class="fa fa-heart"></i></button>
+                            <button class="add"><i class="fa fa-plus"></i></button>
+                        </div>
+                        <div class="info-panel">
+                            <button class="close"><i class="fa fa-times-circle"></i></button>
+                            <button class="report"><i class="fa fa-flag"></i></button>
+                            <span class="uploader">Added by User</span>
+                            <span class="source">16 day ago from <i class="fa fa-youtube-play"></i></span>
+                        </div>
+                        <div class="corner"><span class="rank">5</span></div>
+                    </div>
+                    <div class="song-info">
+                        <button class="upvote"><i class="fa fa-arrow-up"></i>496</button>
+                        <span class="artist">The Artist -</span>
+                        <span class="song">The Song Name</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="cover">
+                        <img src="images/albums/5.png" />
+                        <div class="hover-panel">
+                            <button class="play"></button>
+                            <button class="info"><i class="fa fa-info-circle"></i></button>
+                            <button class="favorite"><i class="fa fa-heart"></i></button>
+                            <button class="add"><i class="fa fa-plus"></i></button>
+                        </div>
+                        <div class="info-panel">
+                            <button class="close"><i class="fa fa-times-circle"></i></button>
+                            <button class="report"><i class="fa fa-flag"></i></button>
+                            <span class="uploader">Added by User</span>
+                            <span class="source">16 day ago from <i class="fa fa-youtube-play"></i></span>
+                        </div>
+                        <div class="corner"><span class="rank">5</span></div>
+                    </div>
+                    <div class="song-info">
+                        <button class="upvote"><i class="fa fa-arrow-up"></i>496</button>
+                        <span class="artist">The Artist -</span>
+                        <span class="song">The Song Name</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="cover">
+                        <img src="images/albums/5.png" />
+                        <div class="hover-panel">
+                            <button class="play"></button>
+                            <button class="info"><i class="fa fa-info-circle"></i></button>
+                            <button class="favorite"><i class="fa fa-heart"></i></button>
+                            <button class="add"><i class="fa fa-plus"></i></button>
+                        </div>
+                        <div class="info-panel">
+                            <button class="close"><i class="fa fa-times-circle"></i></button>
+                            <button class="report"><i class="fa fa-flag"></i></button>
+                            <span class="uploader">Added by User</span>
+                            <span class="source">16 day ago from <i class="fa fa-youtube-play"></i></span>
+                        </div>
+                        <div class="corner"><span class="rank">5</span></div>
+                    </div>
+                    <div class="song-info">
+                        <button class="upvote"><i class="fa fa-arrow-up"></i>496</button>
+                        <span class="artist">The Artist -</span>
+                        <span class="song">The Song Name</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="cover">
+                        <img src="images/albums/5.png" />
+                        <div class="hover-panel">
+                            <button class="play"></button>
+                            <button class="info"><i class="fa fa-info-circle"></i></button>
+                            <button class="favorite"><i class="fa fa-heart"></i></button>
+                            <button class="add"><i class="fa fa-plus"></i></button>
+                        </div>
+                        <div class="info-panel">
+                            <button class="close"><i class="fa fa-times-circle"></i></button>
+                            <button class="report"><i class="fa fa-flag"></i></button>
+                            <span class="uploader">Added by User</span>
+                            <span class="source">16 day ago from <i class="fa fa-youtube-play"></i></span>
+                        </div>
+                        <div class="corner"><span class="rank">5</span></div>
+                    </div>
+                    <div class="song-info">
+                        <button class="upvote"><i class="fa fa-arrow-up"></i>496</button>
+                        <span class="artist">The Artist -</span>
+                        <span class="song">The Song Name</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="cover">
+                        <img src="images/albums/5.png" />
+                        <div class="hover-panel">
+                            <button class="play"></button>
+                            <button class="info"><i class="fa fa-info-circle"></i></button>
+                            <button class="favorite"><i class="fa fa-heart"></i></button>
+                            <button class="add"><i class="fa fa-plus"></i></button>
+                        </div>
+                        <div class="info-panel">
+                            <button class="close"><i class="fa fa-times-circle"></i></button>
+                            <button class="report"><i class="fa fa-flag"></i></button>
+                            <span class="uploader">Added by User</span>
+                            <span class="source">16 day ago from <i class="fa fa-youtube-play"></i></span>
+                        </div>
+                        <div class="corner"><span class="rank">5</span></div>
+                    </div>
+                    <div class="song-info">
+                        <button class="upvote"><i class="fa fa-arrow-up"></i>496</button>
+                        <span class="artist">The Artist -</span>
+                        <span class="song">The Song Name</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="cover">
+                        <img src="images/albums/5.png" />
+                        <div class="hover-panel">
+                            <button class="play"></button>
+                            <button class="info"><i class="fa fa-info-circle"></i></button>
+                            <button class="favorite"><i class="fa fa-heart"></i></button>
+                            <button class="add"><i class="fa fa-plus"></i></button>
+                        </div>
+                        <div class="info-panel">
+                            <button class="close"><i class="fa fa-times-circle"></i></button>
+                            <button class="report"><i class="fa fa-flag"></i></button>
+                            <span class="uploader">Added by User</span>
+                            <span class="source">16 day ago from <i class="fa fa-youtube-play"></i></span>
+                        </div>
+                        <div class="corner"><span class="rank">5</span></div>
+                    </div>
+                    <div class="song-info">
+                        <button class="upvote"><i class="fa fa-arrow-up"></i>496</button>
+                        <span class="artist">The Artist -</span>
+                        <span class="song">The Song Name</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="cover">
+                        <img src="images/albums/5.png" />
+                        <div class="hover-panel">
+                            <button class="play"></button>
+                            <button class="info"><i class="fa fa-info-circle"></i></button>
+                            <button class="favorite"><i class="fa fa-heart"></i></button>
+                            <button class="add"><i class="fa fa-plus"></i></button>
+                        </div>
+                        <div class="info-panel">
+                            <button class="close"><i class="fa fa-times-circle"></i></button>
+                            <button class="report"><i class="fa fa-flag"></i></button>
+                            <span class="uploader">Added by User</span>
+                            <span class="source">16 day ago from <i class="fa fa-youtube-play"></i></span>
+                        </div>
+                        <div class="corner"><span class="rank">5</span></div>
+                    </div>
+                    <div class="song-info">
+                        <button class="upvote"><i class="fa fa-arrow-up"></i>496</button>
+                        <span class="artist">The Artist -</span>
+                        <span class="song">The Song Name</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="cover">
+                        <img src="images/albums/5.png" />
+                        <div class="hover-panel">
+                            <button class="play"></button>
+                            <button class="info"><i class="fa fa-info-circle"></i></button>
+                            <button class="favorite"><i class="fa fa-heart"></i></button>
+                            <button class="add"><i class="fa fa-plus"></i></button>
+                        </div>
+                        <div class="info-panel">
+                            <button class="close"><i class="fa fa-times-circle"></i></button>
+                            <button class="report"><i class="fa fa-flag"></i></button>
+                            <span class="uploader">Added by User</span>
+                            <span class="source">16 day ago from <i class="fa fa-youtube-play"></i></span>
+                        </div>
+                        <div class="corner"><span class="rank">5</span></div>
+                    </div>
+                    <div class="song-info">
+                        <button class="upvote"><i class="fa fa-arrow-up"></i>496</button>
+                        <span class="artist">The Artist -</span>
+                        <span class="song">The Song Name</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="cover">
+                        <img src="images/albums/5.png" />
+                        <div class="hover-panel">
+                            <button class="play"></button>
+                            <button class="info"><i class="fa fa-info-circle"></i></button>
+                            <button class="favorite"><i class="fa fa-heart"></i></button>
+                            <button class="add"><i class="fa fa-plus"></i></button>
+                        </div>
+                        <div class="info-panel">
+                            <button class="close"><i class="fa fa-times-circle"></i></button>
+                            <button class="report"><i class="fa fa-flag"></i></button>
+                            <span class="uploader">Added by User</span>
+                            <span class="source">16 day ago from <i class="fa fa-youtube-play"></i></span>
+                        </div>
+                        <div class="corner"><span class="rank">5</span></div>
+                    </div>
+                    <div class="song-info">
+                        <button class="upvote"><i class="fa fa-arrow-up"></i>496</button>
+                        <span class="artist">The Artist -</span>
+                        <span class="song">The Song Name</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <footer id="bottom-bar">
+            <div class="left">
+                <button id="previous"></button>
+                <button id="play"></button>
+                <button id="next"></button>
+                <button id="volume"></button>
+            </div>
+            <div class="center">
+                <button id="active-cover"><img src="images/playeralbumart.png" /></button>
+                <span id="active-artist">The Strokes -</span>
+                <div id="scrubber">
+                    <span class="meter" style="width:60%"></span>
+                </div>
+                <span id="active-song">Under the Cover of Darkness</span>
+                <span id="timeleft">4:25</span>
+            </div>
+            <div class="right">
+                <button id="random"><i class="fa fa-random"></i></button>
+                <button id="repeat"><i class="fa fa-repeat"></i></button>
+                <button id="favorite"><i class="fa fa-heart"></i></button>
+                <button id="add"><i class="fa fa-plus"></i></button>
+                <button id="share"></button>
+                <button id="options"><i class="fa fa-ellipsis-v"></i></button>
+            </div>
+        </footer>
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+        <!-- build:js js/main.min.js -->
+        <script src="js/main.js"></script>
+        <!-- endbuild -->
+
+        <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+    </body>
+</html>
