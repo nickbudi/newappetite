@@ -5,21 +5,25 @@ $('#navicon').click(function(){
 	$('#off-canvas').toggleClass("hide");   
 	$('#main').toggleClass("expand");   
 });
-
-// Search Bar Animations
-$(document).ready(function() {
-  $('#search').click(function() {
-      $('#search-input').animate({width: 300},8, function(){
-        $(this).focus();
-      });
-  });
-  $('#search-input').click(function() {
-      $(this).animate({width: 300},8);
-  });
-  $('#search-input').focusout(function() {
-      $(this).animate({width: 0},8);
-  });
+$('.minimize').click(function(){  
+  $(this).parent().prev('ul').toggleClass("minimize");
 });
+
+
+// // Search Bar Animations
+// $(document).ready(function() {
+//   $('#search').click(function() {
+//       $('#search-input').animate({width: 300},8, function(){
+//         $(this).focus();
+//       });
+//   });
+//   $('#search-input').click(function() {
+//       $(this).animate({width: 300},8);
+//   });
+//   $('#search-input').focusout(function() {
+//       $(this).animate({width: 0},8);
+//   });
+// });
 
 // Info Button 
 $('.info').click(function(){  

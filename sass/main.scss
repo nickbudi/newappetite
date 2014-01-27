@@ -36,7 +36,7 @@ $rad: 2px;
 }
 
 ::-webkit-scrollbar-track {
-   background: rgba(0,0,0,0);
+   background: transparent;
    border-radius: 0px;
 }
 
@@ -391,30 +391,83 @@ button {
       background: #fff;
    }
 
+   #search {
+      width: inherit;
+      height: 40px;
+      background-color: transparent;
+      &:hover {
+         background-color: darken($navy, 5%);
+      }
+
+      button {
+         float: left;
+         height: inherit;
+         width: 30px;
+         color: lighten($navy, 40%);
+         margin-right: 5px;
+         &:hover{
+            color: #fff;
+         }
+      }
+      #search-input {
+         float: left;
+         width: 165px;
+         height: inherit;
+         padding: 0;
+         margin: 0;
+         border: none;
+         outline: none;
+         color: #fff;
+         background-color: transparent;
+         &::-webkit-input-placeholder {
+            color: lighten($navy, 40%);
+         }
+
+         &:-moz-placeholder { /* Firefox 18- */
+            color: lighten($navy, 40%);  
+         }
+
+         &::-moz-placeholder {  /* Firefox 19+ */
+            color: lighten($navy, 40%);  
+         }
+
+         &:-ms-input-placeholder {  
+            color: lighten($navy, 40%);  
+         }
+      }
+   }
+
    ul {
       list-style: none;
       color: #fff;
       margin: 0;
       padding: 0;
+      &.minimize {
+         height: 28px;
+      }
       li {
          font-family: "Lato";
-         font-size: 14px;
+         font-size: 12px;
          letter-spacing: .7px;
          &.label {
-            padding: 8px;
-            font-size: 10px;
+            padding: 8px !important;
+            font-size: 10px !important;
             font-weight: 300;
             text-transform: uppercase;
+            color: lighten($navy, 40%);
             background-color: darken($navy, 5%);
             .minimize {
                float: right;
-               color: lighten($navy, 15%);
+               color: lighten($navy, 20%);
                &.active {
                   transform: rotate(90deg);
                }
             }
-         }
+         } 
+      }
+      &#charts {
          a {
+            font-size: 14px;
             display: block;
             padding: 8px 20px;
             &:hover {
@@ -423,7 +476,23 @@ button {
             &.active {
                border-right: 4px solid $green;
             }
-         } 
+            i {
+               margin-right: 6px;
+               &.fa-calendar {
+                  position: relative;
+                  top: -1px;
+                  font-size: 12px;
+               }
+            }
+         }
+      }      
+      &#genres {
+         li {
+            font-size: 12px;
+            font-weight: 300;
+            display: block;
+            padding: 4px 20px;
+         }
       }
    }
 
