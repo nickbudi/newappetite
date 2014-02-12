@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300);
+
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
 
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
@@ -572,10 +574,11 @@ a {
 body {
   width: 100%;
   font-size: 14px;
+  font-family: 'Lato', sans-serif;
   background-color: #eceef4;
 }
 
-/* line 63, ../sass/main.scss */
+/* line 64, ../sass/main.scss */
 
 button {
   outline: none;
@@ -585,7 +588,7 @@ button {
   background-color: transparent;
 }
 
-/* line 71, ../sass/main.scss */
+/* line 72, ../sass/main.scss */
 
 #top-bar {
   position: absolute;
@@ -597,7 +600,7 @@ button {
   background-color: #fff;
 }
 
-/* line 80, ../sass/main.scss */
+/* line 81, ../sass/main.scss */
 
 #top-bar #logo {
   float: left;
@@ -613,14 +616,14 @@ button {
   transition: all 300ms ease;
 }
 
-/* line 91, ../sass/main.scss */
+/* line 92, ../sass/main.scss */
 
 #top-bar #logo.small {
   width: 52px;
   background-position: 10px 8px;
 }
 
-/* line 99, ../sass/main.scss */
+/* line 100, ../sass/main.scss */
 
 #top-bar nav #navicon {
   float: left;
@@ -630,7 +633,7 @@ button {
   border-right: 1px solid rgba(165, 171, 197, 0.3);
 }
 
-/* line 109, ../sass/main.scss */
+/* line 110, ../sass/main.scss */
 
 #top-bar nav #navicon:hover .lines,
 #top-bar nav #navicon:hover .lines:before,
@@ -638,7 +641,7 @@ button {
   background-color: #868eb1;
 }
 
-/* line 112, ../sass/main.scss */
+/* line 113, ../sass/main.scss */
 
 #top-bar nav #navicon:hover .lines:before,
 #top-bar nav #navicon:hover .lines:after {
@@ -650,7 +653,7 @@ button {
   left: 1px;
 }
 
-/* line 118, ../sass/main.scss */
+/* line 119, ../sass/main.scss */
 
 #top-bar nav #navicon:hover .lines:before {
   -webkit-transform: rotate3d(0, 0, 1, -40deg);
@@ -658,7 +661,7 @@ button {
   transform: rotate3d(0, 0, 1, -40deg);
 }
 
-/* line 121, ../sass/main.scss */
+/* line 122, ../sass/main.scss */
 
 #top-bar nav #navicon:hover .lines:after {
   -webkit-transform: rotate3d(0, 0, 1, 40deg);
@@ -666,7 +669,7 @@ button {
   transform: rotate3d(0, 0, 1, 40deg);
 }
 
-/* line 126, ../sass/main.scss */
+/* line 127, ../sass/main.scss */
 
 #top-bar nav #navicon.arrow-right .lines {
   -webkit-transform: rotate3d(0, 0, 1, 180deg);
@@ -674,7 +677,7 @@ button {
   transform: rotate3d(0, 0, 1, 180deg);
 }
 
-/* line 130, ../sass/main.scss */
+/* line 131, ../sass/main.scss */
 
 #top-bar nav #navicon .lines {
   display: inline-block;
@@ -685,7 +688,7 @@ button {
   top: -4px;
 }
 
-/* line 138, ../sass/main.scss */
+/* line 139, ../sass/main.scss */
 
 #top-bar nav #navicon .lines:before,
 #top-bar nav #navicon .lines:after {
@@ -701,63 +704,57 @@ button {
   transform-origin: 5px center;
 }
 
-/* line 149, ../sass/main.scss */
+/* line 150, ../sass/main.scss */
 
 #top-bar nav #navicon .lines:before {
   top: -6px;
 }
 
-/* line 153, ../sass/main.scss */
+/* line 154, ../sass/main.scss */
 
 #top-bar nav #navicon .lines:after {
   top: 6px;
 }
 
-/* line 159, ../sass/main.scss */
+/* line 160, ../sass/main.scss */
 
-#top-bar nav #search {
+#top-bar nav .subnav {
+  display: inline-block;
   float: left;
-  width: 52px;
   height: 52px;
-  text-align: center;
+  padding: 0 14px;
+  font-family: inherit;
+  letter-spacing: 0.4px;
+  font-size: 14px;
   color: #a5abc5;
 }
 
-/* line 165, ../sass/main.scss */
+/* line 169, ../sass/main.scss */
 
-#top-bar nav #search i {
-  font-size: 16px;
+#top-bar nav .subnav:hover {
+  color: #353842;
 }
 
-/* line 168, ../sass/main.scss */
+/* line 172, ../sass/main.scss */
 
-#top-bar nav #search:hover {
-  color: #868eb1;
+#top-bar nav .subnav.active {
+  color: #353842;
+  border-bottom: 3px solid #68c07b;
 }
 
-/* line 173, ../sass/main.scss */
-
-#top-bar nav #search-input {
-  float: left;
-  width: 0px;
-  height: 52px;
-  padding: 0;
-  border: none;
-  outline: none;
-}
-
-/* line 182, ../sass/main.scss */
+/* line 178, ../sass/main.scss */
 
 #top-bar nav #guest {
   display: inline-block;
   margin: 13px 15px 0;
   float: right;
-  font-family: "Montserrat";
+  font-family: 'Montserrat', sans-serif;
   font-size: 11px;
-  letter-spacing: 0.7px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
 }
 
-/* line 189, ../sass/main.scss */
+/* line 186, ../sass/main.scss */
 
 #top-bar nav #guest button {
   width: 75px;
@@ -765,24 +762,26 @@ button {
   text-transform: uppercase;
   color: #fff;
   background-color: #68c07b;
+  font-weight: inherit;
+  letter-spacing: inherit;
 }
 
-/* line 195, ../sass/main.scss */
+/* line 194, ../sass/main.scss */
 
 #top-bar nav #guest button:hover {
   background-color: #56b86b;
 }
 
-/* line 198, ../sass/main.scss */
+/* line 197, ../sass/main.scss */
 
-#top-bar nav #guest button#signin {
+#top-bar nav #guest button#login {
   float: left;
   margin-right: 2px;
   border-top-left-radius: 2px;
   border-bottom-left-radius: 2px;
 }
 
-/* line 204, ../sass/main.scss */
+/* line 203, ../sass/main.scss */
 
 #top-bar nav #guest button#signup {
   margin-left: 2px;
@@ -790,7 +789,7 @@ button {
   border-bottom-right-radius: 2px;
 }
 
-/* line 210, ../sass/main.scss */
+/* line 209, ../sass/main.scss */
 
 #top-bar nav #guest .or {
   position: relative;
@@ -800,7 +799,7 @@ button {
   color: #a5abc5;
 }
 
-/* line 216, ../sass/main.scss */
+/* line 215, ../sass/main.scss */
 
 #top-bar nav #guest .or:before {
   position: absolute;
@@ -816,7 +815,7 @@ button {
   border-radius: 500px;
 }
 
-/* line 232, ../sass/main.scss */
+/* line 231, ../sass/main.scss */
 
 #top-bar nav #profile {
   position: relative;
@@ -828,7 +827,7 @@ button {
   display: none;
 }
 
-/* line 240, ../sass/main.scss */
+/* line 239, ../sass/main.scss */
 
 #top-bar nav #profile img {
   width: 24px;
@@ -836,21 +835,21 @@ button {
   margin-left: 15px;
 }
 
-/* line 245, ../sass/main.scss */
+/* line 244, ../sass/main.scss */
 
 #top-bar nav #profile .name {
   position: relative;
   top: -7px;
   left: 8px;
   text-align: center;
-  font-family: "Montserrat";
+  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 12px;
   letter-spacing: .7px;
   margin-right: 30px;
 }
 
-/* line 255, ../sass/main.scss */
+/* line 254, ../sass/main.scss */
 
 #top-bar nav #profile .name:after {
   content: "";
@@ -868,20 +867,20 @@ button {
   transform: rotate(90deg);
 }
 
-/* line 270, ../sass/main.scss */
+/* line 269, ../sass/main.scss */
 
 #top-bar nav #profile:hover .name,
 #top-bar nav #profile:hover .name:after {
   color: #868eb1;
 }
 
-/* line 273, ../sass/main.scss */
+/* line 272, ../sass/main.scss */
 
 #top-bar nav #profile:hover ul {
   display: block;
 }
 
-/* line 277, ../sass/main.scss */
+/* line 276, ../sass/main.scss */
 
 #top-bar nav #profile ul {
   display: none;
@@ -897,21 +896,22 @@ button {
   background-color: #fff;
   border-bottom-right-radius: 2px;
   border-bottom-left-radius: 2px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.08);
 }
 
-/* line 293, ../sass/main.scss */
+/* line 292, ../sass/main.scss */
 
 #top-bar nav #profile ul li:hover a {
   color: #868eb1;
 }
 
-/* line 296, ../sass/main.scss */
+/* line 295, ../sass/main.scss */
 
 #top-bar nav #profile ul li a {
   display: block;
   margin: 0;
   padding: 10px 18px;
-  font-family: "Montserrat";
+  font-family: 'Montserrat', sans-serif;
   font-size: 12px;
   font-weight: 400;
   letter-spacing: .7px;
@@ -919,7 +919,7 @@ button {
   border-top: 1px solid rgba(165, 171, 197, 0.3);
 }
 
-/* line 306, ../sass/main.scss */
+/* line 305, ../sass/main.scss */
 
 #top-bar nav #profile ul li a i {
   position: relative;
@@ -928,7 +928,7 @@ button {
   font-size: 18px;
 }
 
-/* line 316, ../sass/main.scss */
+/* line 315, ../sass/main.scss */
 
 #top-bar nav #profile ul .user-stats a {
   display: inline-block;
@@ -947,14 +947,14 @@ button {
   border-top: none;
 }
 
-/* line 331, ../sass/main.scss */
+/* line 330, ../sass/main.scss */
 
 #top-bar nav #profile ul .user-stats a.followers {
   border-left: 1px solid rgba(165, 171, 197, 0.3);
   border-right: 1px solid rgba(165, 171, 197, 0.3);
 }
 
-/* line 340, ../sass/main.scss */
+/* line 339, ../sass/main.scss */
 
 #top-bar nav #add-music {
   float: right;
@@ -962,7 +962,7 @@ button {
   height: 26px;
   margin: 13px 15px 0;
   color: #fff;
-  font-family: "Montserrat";
+  font-family: 'Montserrat', sans-serif;
   font-size: 11px;
   letter-spacing: 0.7;
   text-align: center;
@@ -972,7 +972,7 @@ button {
   display: none;
 }
 
-/* line 354, ../sass/main.scss */
+/* line 353, ../sass/main.scss */
 
 #top-bar nav #add-music i {
   position: relative;
@@ -982,20 +982,20 @@ button {
   font-size: 7px;
 }
 
-/* line 361, ../sass/main.scss */
+/* line 360, ../sass/main.scss */
 
 #top-bar nav #add-music:hover {
   background-color: #48ad5e;
 }
 
-/* line 368, ../sass/main.scss */
+/* line 367, ../sass/main.scss */
 
 #off-canvas {
   position: fixed;
   width: 200px;
   background-color: #353842;
   overflow-x: hidden;
-  overflow-y: auto;
+  overflow-y: hidden;
   top: 52px;
   bottom: 52px;
   left: 0;
@@ -1003,32 +1003,32 @@ button {
   transition: all 300ms ease;
 }
 
-/* line 379, ../sass/main.scss */
+/* line 378, ../sass/main.scss */
 
 #off-canvas.hide {
   left: -200px;
 }
 
-/* line 383, ../sass/main.scss */
+/* line 382, ../sass/main.scss */
 
 #off-canvas::-webkit-scrollbar {
   width: 2px;
 }
 
-/* line 386, ../sass/main.scss */
+/* line 385, ../sass/main.scss */
 
 #off-canvas::-webkit-scrollbar-track {
   background: none;
   border-radius: 0px;
 }
 
-/* line 390, ../sass/main.scss */
+/* line 389, ../sass/main.scss */
 
 #off-canvas::-webkit-scrollbar-thumb {
-  background: #fff;
+  background: #68c07b;
 }
 
-/* line 394, ../sass/main.scss */
+/* line 393, ../sass/main.scss */
 
 #off-canvas #search {
   width: inherit;
@@ -1036,13 +1036,13 @@ button {
   background-color: transparent;
 }
 
-/* line 398, ../sass/main.scss */
+/* line 397, ../sass/main.scss */
 
 #off-canvas #search:hover {
   background-color: #2a2c34;
 }
 
-/* line 402, ../sass/main.scss */
+/* line 401, ../sass/main.scss */
 
 #off-canvas #search button {
   float: left;
@@ -1052,13 +1052,13 @@ button {
   margin-right: 5px;
 }
 
-/* line 408, ../sass/main.scss */
+/* line 407, ../sass/main.scss */
 
 #off-canvas #search button:hover {
   color: #fff;
 }
 
-/* line 412, ../sass/main.scss */
+/* line 411, ../sass/main.scss */
 
 #off-canvas #search #search-input {
   float: left;
@@ -1072,48 +1072,44 @@ button {
   background-color: transparent;
 }
 
-/* line 422, ../sass/main.scss */
+/* line 421, ../sass/main.scss */
 
 #off-canvas #search #search-input::-webkit-input-placeholder {
   color: #979cac;
 }
 
-/* line 426, ../sass/main.scss */
+/* line 425, ../sass/main.scss */
 
 #off-canvas #search #search-input:-moz-placeholder {
   /* Firefox 18- */
   color: #979cac;
 }
 
-/* line 430, ../sass/main.scss */
+/* line 429, ../sass/main.scss */
 
 #off-canvas #search #search-input::-moz-placeholder {
   /* Firefox 19+ */
   color: #979cac;
 }
 
-/* line 434, ../sass/main.scss */
+/* line 433, ../sass/main.scss */
 
 #off-canvas #search #search-input:-ms-input-placeholder {
   color: #979cac;
 }
 
-/* line 440, ../sass/main.scss */
+/* line 439, ../sass/main.scss */
 
 #off-canvas ul {
   list-style: none;
   color: #fff;
+  height: auto;
   margin: 0;
   padding: 0;
+  overflow: hidden;
 }
 
-/* line 445, ../sass/main.scss */
-
-#off-canvas ul.minimize {
-  height: 28px;
-}
-
-/* line 448, ../sass/main.scss */
+/* line 446, ../sass/main.scss */
 
 #off-canvas ul li {
   font-family: "Lato";
@@ -1121,7 +1117,7 @@ button {
   letter-spacing: .7px;
 }
 
-/* line 452, ../sass/main.scss */
+/* line 450, ../sass/main.scss */
 
 #off-canvas ul li.label {
   padding: 8px !important;
@@ -1132,56 +1128,86 @@ button {
   background-color: #2a2c34;
 }
 
-/* line 459, ../sass/main.scss */
+/* line 457, ../sass/main.scss */
 
-#off-canvas ul li.label .minimize {
+#off-canvas ul li.label #minimize {
   float: right;
   color: #62687b;
-}
-
-/* line 462, ../sass/main.scss */
-
-#off-canvas ul li.label .minimize.active {
   -webkit-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   transform: rotate(90deg);
 }
 
-/* line 469, ../sass/main.scss */
+/* line 465, ../sass/main.scss */
 
-#off-canvas ul#charts a {
+#off-canvas ul#nav a {
   font-size: 14px;
   display: block;
-  padding: 8px 20px;
+  height: 40px;
+  padding: 11px 8px;
+  font-family: inherit;
+  font-weight: 400;
 }
 
-/* line 473, ../sass/main.scss */
+/* line 472, ../sass/main.scss */
 
-#off-canvas ul#charts a:hover {
+#off-canvas ul#nav a:hover {
   background-color: #404450;
 }
 
 /* line 476, ../sass/main.scss */
 
-#off-canvas ul#charts a.active {
-  border-right: 4px solid #68c07b;
+#off-canvas ul#nav a.active:after {
+  position: absolute;
+  right: 0;
+  height: 0;
+  width: 0;
+  margin-top: 3px;
+  margin-left: 0px;
+  border: solid transparent;
+  border-width: 6px;
+  pointer-events: none;
+  border-top-color: #eceef4;
+  content: " ";
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
 }
 
-/* line 479, ../sass/main.scss */
+/* line 494, ../sass/main.scss */
 
-#off-canvas ul#charts a i {
+#off-canvas ul#nav a i {
   margin-right: 6px;
 }
 
-/* line 481, ../sass/main.scss */
+/* line 496, ../sass/main.scss */
 
-#off-canvas ul#charts a i.fa-calendar {
+#off-canvas ul#nav a i.fa-calendar {
   position: relative;
   top: -1px;
   font-size: 12px;
 }
 
-/* line 490, ../sass/main.scss */
+/* line 504, ../sass/main.scss */
+
+#off-canvas ul#genres {
+  height: 28px;
+}
+
+/* line 506, ../sass/main.scss */
+
+#off-canvas ul#genres:hover {
+  height: 270px;
+}
+
+/* line 508, ../sass/main.scss */
+
+#off-canvas ul#genres:hover #minimize {
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+/* line 512, ../sass/main.scss */
 
 #off-canvas ul#genres li {
   font-size: 12px;
@@ -1190,18 +1216,74 @@ button {
   padding: 4px 20px;
 }
 
-/* line 499, ../sass/main.scss */
+/* line 517, ../sass/main.scss */
 
-#off-canvas footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  padding: 5px 8px;
-  color: #fff;
-  background-color: #2a2c34;
+#off-canvas ul#genres li:nth-child(2) {
+  margin-top: 5px;
 }
 
-/* line 509, ../sass/main.scss */
+/* line 521, ../sass/main.scss */
+
+#off-canvas ul#genres li .checkbox {
+  position: relative;
+  float: left;
+  width: 14px;
+  height: 14px;
+  margin-right: 4px;
+  background: #eceef4;
+  border-radius: 50px;
+}
+
+/* line 530, ../sass/main.scss */
+
+#off-canvas ul#genres li .checkbox label {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 2px;
+  left: 2px;
+  cursor: pointer;
+  background: -webkit-linear-gradient(top, #222222 0%, #45484d 100%);
+  background: linear-gradient(top, #222222 0%, #45484d 100%);
+  border-radius: 50px;
+}
+
+/* line 539, ../sass/main.scss */
+
+#off-canvas ul#genres li .checkbox label:after {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  top: 1px;
+  left: 1px;
+  background: #68c07b;
+  opacity: 0;
+  border-radius: 50px;
+}
+
+/* line 550, ../sass/main.scss */
+
+#off-canvas ul#genres li .checkbox label:hover::after {
+  opacity: 0.5;
+}
+
+/* line 554, ../sass/main.scss */
+
+#off-canvas ul#genres li .checkbox input[type=checkbox] {
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  visibility: hidden;
+}
+
+/* line 559, ../sass/main.scss */
+
+#off-canvas ul#genres li .checkbox input[type=checkbox]:checked + label:after {
+  opacity: 1;
+}
+
+/* line 569, ../sass/main.scss */
 
 #main {
   position: fixed;
@@ -1218,13 +1300,13 @@ button {
   transition: all 300ms ease;
 }
 
-/* line 522, ../sass/main.scss */
+/* line 582, ../sass/main.scss */
 
 #main.expand {
   left: 0;
 }
 
-/* line 526, ../sass/main.scss */
+/* line 586, ../sass/main.scss */
 
 #main .chart {
   width: 100%;
@@ -1232,7 +1314,7 @@ button {
   padding: 0;
 }
 
-/* line 533, ../sass/main.scss */
+/* line 593, ../sass/main.scss */
 
 #main .chart li {
   float: left;
@@ -1241,16 +1323,16 @@ button {
   margin: 32px 0 0 32px;
   padding: 0;
   list-style-type: none;
-  box-shadow: 0px 2px 8px 2px rgba(180, 180, 180, 0.2);
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.06);
 }
 
-/* line 541, ../sass/main.scss */
+/* line 601, ../sass/main.scss */
 
 #main .chart li:last-child {
   margin-bottom: 50px;
 }
 
-/* line 545, ../sass/main.scss */
+/* line 605, ../sass/main.scss */
 
 #main .chart li .cover {
   position: relative;
@@ -1261,14 +1343,14 @@ button {
   padding: 0;
 }
 
-/* line 552, ../sass/main.scss */
+/* line 612, ../sass/main.scss */
 
 #main .chart li .cover:hover .hover-panel {
   opacity: 1;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-/* line 556, ../sass/main.scss */
+/* line 616, ../sass/main.scss */
 
 #main .chart li .cover img {
   position: absolute;
@@ -1278,7 +1360,7 @@ button {
   vertical-align: bottom;
 }
 
-/* line 564, ../sass/main.scss */
+/* line 624, ../sass/main.scss */
 
 #main .chart li .cover .hover-panel {
   position: absolute;
@@ -1289,13 +1371,13 @@ button {
   opacity: 0;
 }
 
-/* line 571, ../sass/main.scss */
+/* line 631, ../sass/main.scss */
 
 #main .chart li .cover .hover-panel.hide {
   opacity: 0;
 }
 
-/* line 574, ../sass/main.scss */
+/* line 634, ../sass/main.scss */
 
 #main .chart li .cover .hover-panel button {
   position: absolute;
@@ -1303,7 +1385,7 @@ button {
   font-size: 14px;
 }
 
-/* line 579, ../sass/main.scss */
+/* line 639, ../sass/main.scss */
 
 #main .chart li .cover .hover-panel .play {
   width: 100%;
@@ -1314,21 +1396,21 @@ button {
   background-size: 50px 50px;
 }
 
-/* line 586, ../sass/main.scss */
+/* line 646, ../sass/main.scss */
 
 #main .chart li .cover .hover-panel .play.active {
   background: url("../images/pausebutton.png") center no-repeat;
   background-size: 50px 50px;
 }
 
-/* line 591, ../sass/main.scss */
+/* line 651, ../sass/main.scss */
 
 #main .chart li .cover .hover-panel .info {
   top: 4px;
   right: 4px;
 }
 
-/* line 595, ../sass/main.scss */
+/* line 655, ../sass/main.scss */
 
 #main .chart li .cover .hover-panel .favorite {
   top: 22px;
@@ -1336,26 +1418,26 @@ button {
   font-size: 13px;
 }
 
-/* line 599, ../sass/main.scss */
+/* line 659, ../sass/main.scss */
 
 #main .chart li .cover .hover-panel .favorite:hover {
   color: #ed6868;
 }
 
-/* line 602, ../sass/main.scss */
+/* line 662, ../sass/main.scss */
 
 #main .chart li .cover .hover-panel .favorite.active {
   color: #68c07b;
 }
 
-/* line 606, ../sass/main.scss */
+/* line 666, ../sass/main.scss */
 
 #main .chart li .cover .hover-panel .add {
   top: 39px;
   right: 5px;
 }
 
-/* line 612, ../sass/main.scss */
+/* line 672, ../sass/main.scss */
 
 #main .chart li .cover .info-panel {
   position: absolute;
@@ -1368,34 +1450,34 @@ button {
   display: none;
 }
 
-/* line 621, ../sass/main.scss */
+/* line 681, ../sass/main.scss */
 
 #main .chart li .cover .info-panel.show {
   display: block;
 }
 
-/* line 624, ../sass/main.scss */
+/* line 684, ../sass/main.scss */
 
 #main .chart li .cover .info-panel button {
   position: absolute;
   font-size: 14px;
 }
 
-/* line 627, ../sass/main.scss */
+/* line 687, ../sass/main.scss */
 
 #main .chart li .cover .info-panel button.close {
   top: 4px;
   right: 4px;
 }
 
-/* line 631, ../sass/main.scss */
+/* line 691, ../sass/main.scss */
 
 #main .chart li .cover .info-panel button.report {
   top: 22px;
   right: 4px;
 }
 
-/* line 636, ../sass/main.scss */
+/* line 696, ../sass/main.scss */
 
 #main .chart li .cover .info-panel .uploader {
   position: absolute;
@@ -1405,7 +1487,7 @@ button {
   left: 10px;
 }
 
-/* line 643, ../sass/main.scss */
+/* line 703, ../sass/main.scss */
 
 #main .chart li .cover .info-panel .source {
   position: absolute;
@@ -1415,7 +1497,7 @@ button {
   left: 10px;
 }
 
-/* line 649, ../sass/main.scss */
+/* line 709, ../sass/main.scss */
 
 #main .chart li .cover .info-panel .source i {
   position: relative;
@@ -1424,7 +1506,7 @@ button {
   color: #cd201f;
 }
 
-/* line 658, ../sass/main.scss */
+/* line 718, ../sass/main.scss */
 
 #main .chart li .cover .corner {
   position: absolute;
@@ -1437,7 +1519,7 @@ button {
   background-size: 34px 34px;
 }
 
-/* line 667, ../sass/main.scss */
+/* line 727, ../sass/main.scss */
 
 #main .chart li .cover .corner .rank {
   position: absolute;
@@ -1451,7 +1533,7 @@ button {
   text-align: center;
 }
 
-/* line 681, ../sass/main.scss */
+/* line 741, ../sass/main.scss */
 
 #main .chart li .song-info {
   display: block;
@@ -1461,7 +1543,7 @@ button {
   font-family: "Lato";
 }
 
-/* line 687, ../sass/main.scss */
+/* line 747, ../sass/main.scss */
 
 #main .chart li .song-info .upvote {
   position: relative;
@@ -1472,7 +1554,7 @@ button {
   font-size: 11px;
 }
 
-/* line 695, ../sass/main.scss */
+/* line 755, ../sass/main.scss */
 
 #main .chart li .song-info .upvote i {
   font-size: 18px;
@@ -1480,13 +1562,13 @@ button {
   margin-bottom: 1px;
 }
 
-/* line 700, ../sass/main.scss */
+/* line 760, ../sass/main.scss */
 
 #main .chart li .song-info .upvote.active i {
   color: #fdb614;
 }
 
-/* line 704, ../sass/main.scss */
+/* line 764, ../sass/main.scss */
 
 #main .chart li .song-info span {
   float: left;
@@ -1496,20 +1578,20 @@ button {
   color: #353842;
 }
 
-/* line 710, ../sass/main.scss */
+/* line 770, ../sass/main.scss */
 
 #main .chart li .song-info span.artist {
   margin: 5px 0 0 10px;
 }
 
-/* line 713, ../sass/main.scss */
+/* line 773, ../sass/main.scss */
 
 #main .chart li .song-info span.song {
   margin: 6px 0 0 10px;
   font-weight: 300;
 }
 
-/* line 723, ../sass/main.scss */
+/* line 783, ../sass/main.scss */
 
 #bottom-bar {
   position: fixed;
@@ -1521,13 +1603,13 @@ button {
   background: #fff;
 }
 
-/* line 732, ../sass/main.scss */
+/* line 792, ../sass/main.scss */
 
 #bottom-bar button {
   float: left;
 }
 
-/* line 736, ../sass/main.scss */
+/* line 796, ../sass/main.scss */
 
 #bottom-bar .left {
   width: 200px;
@@ -1536,7 +1618,7 @@ button {
   display: inline-block;
 }
 
-/* line 741, ../sass/main.scss */
+/* line 801, ../sass/main.scss */
 
 #bottom-bar .left #previous {
   width: 27px;
@@ -1549,7 +1631,7 @@ button {
   transform: rotate(180deg);
 }
 
-/* line 749, ../sass/main.scss */
+/* line 809, ../sass/main.scss */
 
 #bottom-bar .left #play {
   width: 23px;
@@ -1559,14 +1641,14 @@ button {
   background-size: 19px 25px;
 }
 
-/* line 755, ../sass/main.scss */
+/* line 815, ../sass/main.scss */
 
 #bottom-bar .left #play.active {
   background: url("../images/pause.png") center no-repeat;
   background-size: 23px 25px;
 }
 
-/* line 760, ../sass/main.scss */
+/* line 820, ../sass/main.scss */
 
 #bottom-bar .left #next {
   width: 27px;
@@ -1576,7 +1658,7 @@ button {
   background-size: 27px 18px;
 }
 
-/* line 767, ../sass/main.scss */
+/* line 827, ../sass/main.scss */
 
 #bottom-bar .left #volume {
   width: 23px;
@@ -1586,7 +1668,7 @@ button {
   background-size: 23px 18px;
 }
 
-/* line 776, ../sass/main.scss */
+/* line 836, ../sass/main.scss */
 
 #bottom-bar .center {
   position: fixed;
@@ -1598,14 +1680,14 @@ button {
   font-size: 14px;
 }
 
-/* line 785, ../sass/main.scss */
+/* line 845, ../sass/main.scss */
 
 #bottom-bar .center #active-cover img {
   width: 52px;
   height: inherit;
 }
 
-/* line 790, ../sass/main.scss */
+/* line 850, ../sass/main.scss */
 
 #bottom-bar .center #active-artist {
   position: absolute;
@@ -1613,7 +1695,7 @@ button {
   left: 69px;
 }
 
-/* line 795, ../sass/main.scss */
+/* line 855, ../sass/main.scss */
 
 #bottom-bar .center #active-song {
   position: absolute;
@@ -1622,7 +1704,7 @@ button {
   font-weight: 300;
 }
 
-/* line 801, ../sass/main.scss */
+/* line 861, ../sass/main.scss */
 
 #bottom-bar .center #scrubber {
   position: absolute;
@@ -1634,7 +1716,7 @@ button {
   border-radius: 9999px;
 }
 
-/* line 809, ../sass/main.scss */
+/* line 869, ../sass/main.scss */
 
 #bottom-bar .center #scrubber .meter {
   display: block;
@@ -1643,7 +1725,7 @@ button {
   border-radius: 9999px;
 }
 
-/* line 816, ../sass/main.scss */
+/* line 876, ../sass/main.scss */
 
 #bottom-bar .center #timeleft {
   position: absolute;
@@ -1652,7 +1734,7 @@ button {
   font-weight: 300;
 }
 
-/* line 824, ../sass/main.scss */
+/* line 884, ../sass/main.scss */
 
 #bottom-bar .right {
   position: fixed;
@@ -1662,7 +1744,7 @@ button {
   right: 0;
 }
 
-/* line 830, ../sass/main.scss */
+/* line 890, ../sass/main.scss */
 
 #bottom-bar .right button {
   width: 20px;
@@ -1673,53 +1755,53 @@ button {
   transition: all 150ms ease-in-out;
 }
 
-/* line 837, ../sass/main.scss */
+/* line 897, ../sass/main.scss */
 
 #bottom-bar .right #random,
 #bottom-bar .right #repeat {
   color: #dadde7;
 }
 
-/* line 839, ../sass/main.scss */
+/* line 899, ../sass/main.scss */
 
 #bottom-bar .right #random:hover,
 #bottom-bar .right #repeat:hover {
   color: #a5abc5;
 }
 
-/* line 843, ../sass/main.scss */
+/* line 903, ../sass/main.scss */
 
 #bottom-bar .right #favorite {
   color: #a5abc5;
 }
 
-/* line 845, ../sass/main.scss */
+/* line 905, ../sass/main.scss */
 
 #bottom-bar .right #favorite:hover {
   color: #ed6868;
 }
 
-/* line 848, ../sass/main.scss */
+/* line 908, ../sass/main.scss */
 
 #bottom-bar .right #favorite.active {
   color: #68c07b;
 }
 
-/* line 852, ../sass/main.scss */
+/* line 912, ../sass/main.scss */
 
 #bottom-bar .right #add,
 #bottom-bar .right #options {
   color: #a5abc5;
 }
 
-/* line 854, ../sass/main.scss */
+/* line 914, ../sass/main.scss */
 
 #bottom-bar .right #add:hover,
 #bottom-bar .right #options:hover {
   color: #868eb1;
 }
 
-/* line 858, ../sass/main.scss */
+/* line 918, ../sass/main.scss */
 
 #bottom-bar .right #share {
   background: url("../images/share.png") center no-repeat;

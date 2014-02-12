@@ -5,10 +5,6 @@ $('#navicon').click(function(){
 	$('#off-canvas').toggleClass("hide");   
 	$('#main').toggleClass("expand");   
 });
-$('.minimize').click(function(){  
-  $(this).parent().prev('ul').toggleClass("minimize");
-});
-
 
 // // Search Bar Animations
 // $(document).ready(function() {
@@ -36,7 +32,7 @@ $('.close').click(function(){
 });
 
 // Fake Login
-$('#signin').click(function(){
+$('#login').click(function(){
   $(this).parent().hide();
   $('#add-music').show();
   $('#profile').show();
@@ -51,6 +47,6 @@ $('#signup').click(function(){
 $('button').click(function(){
   $(this).toggleClass("active");
 });
-$('#charts li a').click(function(){
+$('#nav li a').click(function(){
   $(this).toggleClass("active");
 });
